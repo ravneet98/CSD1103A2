@@ -32,6 +32,7 @@ section {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
+
 nav {
   background-color: #31312f;
   line-height: 1.25em;
@@ -270,11 +271,37 @@ input[type="submit"]:hover {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 480px) and (max-width: 900px) {
   .column,
   input[type="submit"] {
     width: 100%;
     margin-top: 0;
+  }
+  #profile_img {
+    border-radius: 60%;
+    max-width: 40%;
+    height: auto;
+    padding: 1%;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  #contact_img {
+    max-width: 20%;
+    height: auto;
+  }
+  .contact_section {
+    padding: 20px;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: center;
+  }
+  input[type="text"],
+  select,
+  textarea {
+    width: 80%;
+  }
+  input[type="submit"] {
+    width: 30%;
   }
 }
 
@@ -295,6 +322,17 @@ footer {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  li a {
+    display: block;
+    text-decoration: none;
+  }
   #profile {
     background-image: none;
     background-color: #0a1e38;
@@ -320,5 +358,23 @@ footer {
     padding: 1%;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
       0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  #contact_img {
+    max-width: 20%;
+    height: auto;
+  }
+  .contact_section {
+    padding: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+    text-align: center;
+  }
+  input[type="text"],
+  select,
+  textarea {
+    width: 80%;
+  }
+  input[type="submit"] {
+    width: 30%;
   }
 }
