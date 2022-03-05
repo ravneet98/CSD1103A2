@@ -135,7 +135,7 @@ hr.rounded {
 
 .profile_section h3 {
   font-size: 2em;
-  color: #ffffff;
+  color: rgb(29, 192, 209);
   text-align: center;
   vertical-align: top;
   text-transform: capitalize;
@@ -159,7 +159,7 @@ hr.rounded {
 
 .skills_section h3 {
   font-size: 2em;
-  color: #ffffff;
+  color: rgb(29, 192, 209);
   text-align: center;
   vertical-align: top;
   text-transform: capitalize;
@@ -215,7 +215,7 @@ hr.rounded {
 
 .projects_section h3 {
   font-size: 2em;
-  color: #ffffff;
+  color: rgb(29, 192, 209);
   text-align: center;
   vertical-align: top;
   text-transform: capitalize;
@@ -245,7 +245,7 @@ hr.rounded {
 
 .contact_section h3 {
   font-size: 2em;
-  color: #ffffff;
+  color: rgb(29, 192, 209);
   text-align: center;
   vertical-align: top;
   text-transform: capitalize;
@@ -279,7 +279,7 @@ input[type="submit"]:hover {
   background-color: #037abe;
 }
 /*changes 3-4-2021*/
-.contact_form{   
+.contact_form_new{   
    margin: 0 20px 0 0;
   } 
 .footer_text span{
@@ -415,4 +415,5 @@ footer {
     width: 30%;
   }
   .skills_logo{display: inline-block;}
+  .contact_form_new{margin: 0;}
 }
