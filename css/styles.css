@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
-  background-color: #eceff1;
+  /*background-color: #eceff1; */
 }
 
 body {
@@ -19,7 +19,7 @@ section {
 
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3daff 100%);
 }
 .section_left {
   margin-right: 10%;
@@ -34,7 +34,7 @@ section {
 }
 
 nav {
-  background-color: #31312f;
+  background-color: #000000;
   line-height: 1.25em;
   text-align: right;
   padding: 0.25em;
@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: grey;
+  color: rgb(64 182 255);
   text-decoration: underline;
   text-transform: uppercase;
   text-decoration: none;
@@ -80,16 +80,17 @@ hr.rounded {
   margin: 5px;
 }
 .social img:hover {
-  box-shadow: 0 24px 32px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 24px 32px 0 rgba(255, 255, 255, 0.24),
+    0 17px 50px 0 rgba(255, 255, 255, 0.19);
 }
 
 #banner {
-  background-image: url("../images/bg.jpg");
+  background-image: url("../images/background.jpg");
   background-size: cover;
-  height: 60%;
+  height: auto;
   width: 100%;
-  padding-top: 20%;
+  padding-top: 14%;
+  padding-bottom: 6%;
 }
 .banner {
   padding: 5px;
@@ -99,17 +100,20 @@ hr.rounded {
 }
 .banner_name {
   font-size: 5em;
-  color: antiquewhite;
+  color: rgb(255 255 255);
 
   margin-top: 8px;
 }
 .banner_skills {
-  color: #212121;
+  color: #ffffff;
   font-weight: bolder;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+    line-height: 1.4em;
 }
 .heading {
   font-size: 2em;
-  color: rgb(29, 192, 209);
+  color: rgb(226 244 255);
   font-weight: 900;
 }
 #profile_img {
@@ -131,7 +135,7 @@ hr.rounded {
 
 .profile_section h3 {
   font-size: 2em;
-  color: rgb(66, 66, 66);
+  color: rgb(29, 192, 209);
   text-align: center;
   vertical-align: top;
   text-transform: capitalize;
@@ -155,7 +159,7 @@ hr.rounded {
 
 .skills_section h3 {
   font-size: 2em;
-  color: rgb(66, 66, 66);
+  color: rgb(29, 192, 209);
   text-align: center;
   vertical-align: top;
   text-transform: capitalize;
@@ -194,6 +198,7 @@ hr.rounded {
   color: rgb(82, 82, 82);
   text-align: center;
   text-transform: none;
+  font-weight: 700;
 }
 
 .skills_logo img:hover {
@@ -210,7 +215,7 @@ hr.rounded {
 
 .projects_section h3 {
   font-size: 2em;
-  color: rgb(66, 66, 66);
+  color: rgb(29, 192, 209);
   text-align: center;
   vertical-align: top;
   text-transform: capitalize;
@@ -221,7 +226,7 @@ hr.rounded {
   line-height: 1.7em;
   font-size: 1em;
   color: rgb(82, 82, 82);
-  text-align: justify;
+  text-align: center;
   text-justify: inter-word;
   text-transform: none;
 }
@@ -235,11 +240,12 @@ hr.rounded {
   margin-right: 30%;
   margin-left: 30%;
   text-align: center;
+  border-radius: 5%;
 }
 
 .contact_section h3 {
   font-size: 2em;
-  color: rgb(66, 66, 66);
+  color: rgb(29, 192, 209);
   text-align: center;
   vertical-align: top;
   text-transform: capitalize;
@@ -250,14 +256,15 @@ select,
 textarea {
   width: 100%;
   padding: 10px;
-  border: 5px solid #ccc;
+  border: 4px solid #fff;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 input[type="submit"] {
-  background-color: #00afdb;
+  background-color: #000000;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -265,10 +272,18 @@ input[type="submit"] {
   border-radius: 50px;
   font-size: medium;
   font-weight: bolder;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 input[type="submit"]:hover {
   background-color: #037abe;
+}
+/*changes 3-4-2021*/
+.contact_form_new{   
+   margin: 0 20px 0 0;
+  } 
+.footer_text span{
+  color: rgb(64 182 255);
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -309,6 +324,8 @@ input[type="submit"]:hover {
   input[type="submit"] {
     width: 30%;
   }
+  .contact_form_new{margin: 0;}
+  #banner{    height: auto;}
 }
 
 footer {
@@ -326,6 +343,8 @@ footer {
   text-align: center;
   text-transform: none;
 }
+
+
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .banner_name {
@@ -361,8 +380,8 @@ footer {
     margin: 5px;
   }
   .skills_logo img {
-    width: 40%;
-    height: 40%;
+    width: 20%;
+    height: 20%;
     margin: 10px;
     border-radius: 60%;
     padding: 20px;
@@ -395,4 +414,6 @@ footer {
   input[type="submit"] {
     width: 30%;
   }
+  .skills_logo{display: inline-block;}
+  .contact_form_new{margin: 0;}
 }
